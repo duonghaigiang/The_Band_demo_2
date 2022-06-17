@@ -9,13 +9,32 @@
 }
  @media(max-width: 740px)/* mobile  */
 {
+    #navi
+    {
+        display: block;
+    }
     #navi > li{
         display: block; 
     }
     #header .search {
-
+    position: relative;
     display: none;
     }
+    #header .menu-mobie
+    {
+        display: block;
+    }
+    .s-col-full
+    {
+        width: 100%;
+
+    }
+    .menber-imge
+    {
+        width: 8000px;
+        
+    }
+    
 }
 /* pc >= 1024px
    tablet >= 740px && < 1024px

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
 </head>
 
-<body>
+<body> 
     <div id="main">
         <!-- ***Header*** -->
         <div id="header">
@@ -66,21 +66,21 @@
                     aliquip ex ea commodo consequat.</div>
 
                 <div class="row">
-                    <div class=" col col-third text-center ">
+                    <div class=" col col-third text-center s-col-full ">
                         <p class="menber-name">Dương</p>
                         <img src="./assets/img/bandmember (1).jpg" alt="Name" class="menber-imge">
                     </div>
 
 
 
-                    <div class="  col col-third text-center ">
+                    <div class="  col col-third text-center s-col-full ">
                         <p class="menber-name">Hải</p>
                         <img src="./assets/img/bandmember (1).jpg" alt="Name" class="menber-imge">
                     </div>
 
 
 
-                    <div class=" col col-third text-center ">
+                    <div class=" col col-third text-center s-col-full ">
                         <p class="menber-name">Giang</p>
                         <img src="./assets/img/bandmember (1).jpg" alt="Name" class="menber-imge">
                     </div>
@@ -92,7 +92,7 @@
                 <div class="Text-content">
                     <h2 class="Head-content text-center white">TOUR DATES</h2>
                     <div class="sub-content text-center white">Remember to book your tickets!</div>
-                    <div class="List-ticket margin-top-bottom32px">
+                    <div class="List-ticket margin-top32px-bottom16px">
                         <ul class="remain-ticket">
                             <li>September <span class="sold-ticket">Sold out</span> </li>
                             <li>October <span class="sold-ticket">Sold out</span></li>
@@ -101,8 +101,8 @@
                     </div>
                     <!-- <div class="clear"></div> -->
 
-                    <div class="row margin-top-bottom32px">
-                        <div class="col col-third">
+                    <div class="row margin-top32px-bottom32px">
+                        <div class="col col-third s-col-full margin-top32px">
                             <img src="./assets/img/newyork.jpg" alt="NEW-YORK" class="imge-place">
                             <div class="container-place">
                                 <h2 class="header-place">New York</h2>
@@ -114,7 +114,7 @@
 
 
 
-                        <div class="col col-third ">
+                        <div class="col col-third  s-col-full margin-top32px">
                             <img src="./assets/img/paris.jpg" alt="Paris" class="imge-place">
                             <div class="container-place">
                                 <h2 class="header-place">Paris</h2>
@@ -126,7 +126,7 @@
 
 
 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full margin-top32px">
                             <img src="./assets/img/sanfran.jpg" alt="San Francisco" class="imge-place">
                             <div class="container-place">
                                 <h2 class="header-place">San Francisco</h2>
@@ -256,12 +256,24 @@
         //  auto close when click element menu
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
         for (var i = 0; i < menuItems.length; i++) {
-            var menuItem = menuItems[i]
+            var menuItem = menuItems[i];
+             menuItem.onclick = function(event)
+             {
+                 var isParentMenu =this.nextElementSibling && this.nextElementSibling.classList.contains('subnavi')
+                 if  (isParentMenu)
+                 {
+                    event.preventDefault();
 
-            menuItem.onclick = function () {
-                header.style.height = null
-            }
-        }
+                 } else 
+                 {
+                    header.style.height = null
+
+                 }
+             
+                }
+             }
+            
+
     </script>
 </body>
 

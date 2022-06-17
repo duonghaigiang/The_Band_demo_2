@@ -28,6 +28,11 @@ html {
     margin-top: 32px;
     margin-bottom: 32px;
 }
+.margin-top32px-bottom16px
+{
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
 .margin-top-bottom12px
 {
     margin-top: 12px;
@@ -106,6 +111,10 @@ html {
 #navi li{
     position: relative;
 }
+#navi>li:first-child
+{
+    display:inline-block;
+}
 
 #navi li a{
     padding: 0 24px;
@@ -142,11 +151,17 @@ padding: 0 16px;
 text-transform: none;
 
 }
+#header .menu-mobie{
+    display: none;
+}
 #header .menu-mobie,
 #header .search
 {
     float: right;
     padding: 0 24px;
+    top: 0;
+    right: 0;
+    position: absolute;
 
 }
  #header .search:hover
@@ -232,7 +247,7 @@ text-transform: none;
 
 #content .menber-imge{
 border-radius: 4px;
-width: 150px;
+width: 200px;
 }
 
 #content .menber-imge:hover{
