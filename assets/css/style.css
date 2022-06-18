@@ -92,7 +92,7 @@ html {
     position: fixed;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    overflow: hidden;
+    overflow: hidden; 
 
 }
 #navi 
@@ -183,6 +183,7 @@ text-transform: none;
     display: block;
 }
 
+
 #slider {
    background: url('../img/chicago.jpg')top center / cover no-repeat;
    margin-top: 46px;
@@ -196,7 +197,7 @@ text-transform: none;
     color: #fff;
     left: 0;
     right: 0;
-    
+    text-shadow: 0 0 1px #000; 
 
 }
 #slider .slide-header
@@ -496,7 +497,7 @@ padding: 0 12px;
     color: #000;
     border: none;
     cursor: pointer;
-    padding: 12px 12px;
+    padding: 14px 14px; 
 
 }
 .map-section img

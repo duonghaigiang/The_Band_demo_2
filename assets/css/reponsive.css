@@ -1,14 +1,43 @@
-@media (min-width: 1024px)/*pc */
+@media (min-width: 64.000em)/*pc */
 {
 
+}
+@media (max-width:63.938em)
+{
+    .btn-placeticket ,  .send-contact
+    {
+        padding: 14px 12px;
+    }
+    .form-control{
+        padding: 12px 6px;
+    }
+    .social-list
+    {
+        font-size: 42px;
+        margin: 0 8px;
+    }
+    .contact-footer >a
+    {
+        padding: 8px 0;
+        display: inline-block;
+    }
+  
 }
 /* Break Point is call is tranfer point  */
- @media (min-width: 740px) and (max-width: 1024px) /*tablet */
+ @media (min-width: 46.250em) and (max-width: 64.000em) /*tablet */
 {
-
+    .btn-placeticket
+    {
+        padding: 14px 12px !important;
+    }
+    .send-contact
+    {
+        padding: 14px 12px !important;
+    }
 }
- @media(max-width: 740px)/* mobile  */
+ @media(max-width: 46.188em)/* mobile  */
 {
+    
     #navi
     {
         display: block;
@@ -24,9 +53,9 @@
     {
         display: block;
     }
-    .s-col-full
+    .s-col-full , .s-full-with
     {
-        width: 100%;
+        width: 100% !important; 
 
     }
     .menber-imge
@@ -35,6 +64,23 @@
         
     }
     
+    .s-mt-8
+    {
+        margin-top: 8px;
+    }
+  
+    .description
+    {
+        bottom: 20px !important;
+    }
+    .slide-header
+    {
+        font-size: 24px;
+    }
+    .slide-subheader
+    {
+        font-size: 14px;
+    }
 }
 /* pc >= 1024px
    tablet >= 740px && < 1024px
